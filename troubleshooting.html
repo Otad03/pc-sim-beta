@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting - PC Building Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-brand">PC Builder</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="assembly.html">Assembly</a>
+                <a href="build-summary.html">Summary</a>
+                <a href="troubleshooting.html" class="active">Troubleshoot</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="main-container">
+        <div class="page-header">
+            <h1>Troubleshooting Guide</h1>
+            <p>Learn to diagnose and fix common PC issues - Questions are randomized!</p>
+        </div>
+        
+        <div class="scenarios-container">
+            <div id="scenario-display" class="scenario active">
+                <!-- Dynamically generated scenario will appear here -->
+            </div>
+        </div>
+        
+        <div id="feedback" class="feedback-box"></div>
+        
+        <div class="scenario-progress">
+            <span>Question <span id="current-question">1</span> of <span id="total-questions">12</span></span>
+            <div class="progress-bar">
+                <div class="progress-fill" id="question-progress" style="width: 8.33%"></div>
+            </div>
+        </div>
+        
+        <div class="action-bar">
+            <button id="prev-scenario-btn" class="btn-secondary">← Previous</button>
+            <button id="shuffle-btn" class="btn-primary">🔀 Shuffle Questions</button>
+            <button id="next-scenario-btn" class="btn-secondary">Next →</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

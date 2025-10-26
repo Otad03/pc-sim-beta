@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly - PC Building Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-brand">PC Builder</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="assembly.html" class="active">Assembly</a>
+                <a href="build-summary.html">Summary</a>
+                <a href="troubleshooting.html">Troubleshoot</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="main-container">
+        <div class="page-header">
+            <h1>PC Assembly</h1>
+            <p>Drag and drop components onto the motherboard</p>
+        </div>
+        
+        <div class="assembly-workspace">
+            <div class="parts-sidebar">
+                <h2>Available Parts</h2>
+                <div id="parts-list" class="parts-container"></div>
+            </div>
+            
+            <div class="motherboard-area">
+                <div class="motherboard">
+                    <div class="mb-label">Motherboard</div>
+                    
+                    <div class="drop-zone" id="cpu-slot" data-part="cpu">
+                        <div class="slot-label">CPU Socket</div>
+                        <div class="slot-icon">🔲</div>
+                    </div>
+                    
+                    <div class="drop-zone" id="ram-slot" data-part="ram">
+                        <div class="slot-label">RAM Slots</div>
+                        <div class="slot-icon">▬</div>
+                    </div>
+                    
+                    <div class="drop-zone" id="gpu-slot" data-part="gpu">
+                        <div class="slot-label">PCIe x16</div>
+                        <div class="slot-icon">▬▬</div>
+                    </div>
+                    
+                    <div class="drop-zone" id="storage-slot" data-part="storage">
+                        <div class="slot-label">M.2 / SATA</div>
+                        <div class="slot-icon">▭</div>
+                    </div>
+                    
+                    <div class="drop-zone" id="psu-slot" data-part="psu">
+                        <div class="slot-label">PSU</div>
+                        <div class="slot-icon">⚡</div>
+                    </div>
+                </div>
+                
+                <div class="progress-indicator">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="assembly-progress"></div>
+                    </div>
+                    <div class="progress-text">
+                        <span id="parts-installed">0</span> / <span id="total-parts">0</span> parts installed
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="action-bar">
+            <button id="reset-btn" class="btn-secondary">Reset Assembly</button>
+            <button id="finish-btn" class="btn-primary">Finish & Test Build</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

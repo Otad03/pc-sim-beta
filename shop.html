@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - PC Building Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-brand">PC Builder</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="assembly.html">Assembly</a>
+                <a href="build-summary.html">Summary</a>
+                <a href="troubleshooting.html">Troubleshoot</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="main-container">
+        <div class="page-header">
+            <h1>PC Parts Shop</h1>
+            <p>Select parts for your build. Click "Add Money" to increase your budget!</p>
+        </div>
+        
+        <div class="budget-display">
+            <button id="add-money-btn" class="add-money-btn">💰 Add $100</button>
+            <div class="budget-info">
+                <span>Total Cost:</span>
+                <span class="budget-amount">$<span id="total-cost">0</span></span>
+            </div>
+            <div class="budget-bar">
+                <div class="budget-fill" id="budget-fill"></div>
+            </div>
+            <div class="budget-limit">Budget: $<span id="budget-limit">500</span></div>
+        </div>
+        
+        <div id="parts-catalog" class="parts-grid"></div>
+        
+        <div class="action-bar">
+            <button id="clear-btn" class="btn-secondary">Clear Selection</button>
+            <button id="proceed-btn" class="btn-primary" disabled>Proceed to Assembly</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
