@@ -1,60 +1,95 @@
 🖥️ PC Assembly & Troubleshooting Simulator (BETA)
 
-Yo, welcome to the PC Assembly & Troubleshooting Sim — a lil web-based project where you pick parts, build a rig, test if it boots, and even run through some troubleshooting quizzes. Still in beta, so stuff finna get refined as I keep workin’ on it.
+A web-based mini simulator where you pick PC parts, assemble a build, check if it boots, and try out troubleshooting quizzes.
+Still in BETA, so expect new parts, features, and polish later on.
 
-🔧 Features
+⭐ Features
 🛒 Parts Shop
 
-Slide through the shop and check out a small lineup of components.
-You can pick basics like CPUs, GPUs, storage, RAM, and more — just enough to get a build goin’.
+Browse basic PC components
 
-🧩 Assembly Simulator
+Select parts before entering assembly
 
-After you pick ya parts, you get dropped into the assembly page.
-Here, you drag & drop components onto the motherboard and try to set up a workable PC.
+Simple early-stage catalog
 
-⚡ Evaluation System
+🧩 Assembly Page
 
-When you done buildin’, the sim checks if the PC actually boots.
+Drag-and-drop 2D motherboard layout
 
-If ya build valid → it turns on
+Place CPU, GPU, RAM, PSU, storage
 
-If somethin’ off → you get feedback or a “PC won’t turn on” result
+Beginner-friendly interface
+
+⚡ Build Evaluation
+
+Checks if PC powers on
+
+Detects missing or incompatible parts
+
+Gives short feedback on the build
 
 🛠️ Troubleshooting Quizzes
 
-Got a set of multiple-choice quizzes to test ya knowledge on fixing common PC issues.
-Great for practice, review, or just tryna flex ya tech skills.
+Multiple-choice questions
+
+Covers common PC issues
+
+Good for practice & basic learning
 
 👥 Team Page
 
-A simple page showin’ who behind the project.
+Shows project contributors
 
-🚧 Status: BETA
+Simple and clean layout
 
-This whole project still early stage.
-Expect bugs, missing features, unfinished UI, and random goofy behavior here and there.
-More parts, wires/cables, better logic, and full refinements comin’ soon.
+🧰 Tech Stack
 
-🗂️ Tech Stack
+HTML5
 
-HTML, CSS, JavaScript (front-end logic + UI)
+CSS3
 
-Additional improvements planned later
+JavaScript (Vanilla)
 
-📌 Goals
+🚧 Current Status: BETA
 
-Add more realistic components & cable systems
+Things that might happen:
 
-Improve motherboard interactions
+🔹 Limited part selection
 
-Expand troubleshooting sections
+🔹 UI still rough
 
-Clean up UI + animations
+🔹 Logic not final
 
-Add more polish overall
+🔹 Bugs might pop up
 
-🤝 Contributions
+Updates will roll in as development continues.
 
-Feel free to drop suggestions or open issues.
-Project still growin’, so feedback always welcome.
+🎯 Roadmap / Planned Features
+
+⬜ Add more components
+
+⬜ Add PSU cables (24-pin, EPS, PCIe, SATA, etc.)
+
+⬜ Improve boot logic
+
+⬜ Add more troubleshooting cases
+
+⬜ UI/UX overhaul
+
+⬜ Add sound effects & animations
+
+⬜ Save/load feature
+
+⬜ Better part compatibility checking
+
+🤝 Contributing
+
+If you wanna help out:
+
+Open an Issue
+
+Submit Pull Requests
+
+Drop suggestions or improvements
+
+All contributions appreciated.
