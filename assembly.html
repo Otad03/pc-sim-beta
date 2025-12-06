@@ -16,6 +16,7 @@
                 <a href="assembly.html" class="active">Assembly</a>
                 <a href="build-summary.html">Summary</a>
                 <a href="troubleshooting.html">Troubleshoot</a>
+                <a href="team.html">Meet the Team</a>
             </div>
         </div>
     </nav>
@@ -23,18 +24,36 @@
     <div class="main-container">
         <div class="page-header">
             <h1>PC Assembly</h1>
-            <p>Drag and drop components onto the motherboard</p>
+            <p>Drag parts onto motherboard, then connect cables from ports to ports</p>
         </div>
         
         <div class="assembly-workspace">
-            <div class="parts-sidebar">
-                <h2>Available Parts</h2>
-                <div id="parts-list" class="parts-container"></div>
+            <div class="tool-palette">
+                <h2>Tool Palette</h2>
+                <div class="tools-container">
+                    <!-- Parts Section -->
+                    <div class="tool-category">
+                        <h3>Your Selected Parts</h3>
+                        <div id="parts-list" class="parts-container">
+                            <!-- Parts will be dynamically added here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Cables Section -->
+                    <div class="tool-category">
+                        <h3>Power Cables</h3>
+                        <div class="cable-tools">
+                            <!-- Cable tools will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="motherboard-area">
                 <div class="motherboard">
                     <div class="mb-label">Motherboard</div>
+                    
+                    <!-- Cables will be drawn here dynamically -->
                     
                     <div class="drop-zone" id="cpu-slot" data-part="cpu">
                         <div class="slot-label">CPU Socket</div>
@@ -68,6 +87,9 @@
                     </div>
                     <div class="progress-text">
                         <span id="parts-installed">0</span> / <span id="total-parts">0</span> parts installed
+                    </div>
+                    <div class="cables-status" id="cables-status">
+                        <span id="cables-connected">0</span> cables connected
                     </div>
                 </div>
             </div>
